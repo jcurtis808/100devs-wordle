@@ -30,9 +30,13 @@ h1 {
   text-align: center;
 }
 
+
 body form {
   display: flex;
   justify-content: center;
+}
+form * {
+  margin: 0 .25em;
 }
 
 .tile-container {
@@ -48,8 +52,8 @@ body form {
 
 .guessRow div {
   border: 1px solid black;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   
   margin: 5px;
   
@@ -60,12 +64,16 @@ body form {
 
 .guessBox {
   background: rgba(240, 240, 240, 1);
+  text-transform: uppercase;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: white;
 }
 
 /* change color css */
 
 .wrongLetter {
-  background-color: #3a3a3c;
+  background-color: rgba(69, 76, 90, .75);
   border: none;
 }
 

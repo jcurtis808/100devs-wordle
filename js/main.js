@@ -4,10 +4,10 @@ document.querySelector('#checkButton').addEventListener('click', makeLetterArray
 // This little smurf papa looks at the reset button. If it's clicked it resets each cell to ""
 document.querySelector('#resetButton').addEventListener('click', resetScreen)
 
-//Add event listener for Enter key
+//Add event listener for Enter key to prevent it from resetting the board
 document.addEventListener('keydown', e => {
-  if (e.which === 13) {
-    e.returnValue = false;
+  if (e.key === "Enter") {
+    e.preventDefault();
     makeLetterArray();
   }
 })
@@ -15,8 +15,6 @@ document.addEventListener('keydown', e => {
 // Word list - to implement later. Needs a function to randomize which one gets selected
 let wordList = ['goget', 'leon!', 'boats', 'float', 'yaaah', 'yuuuh', 'learn', 'house', 'study', 'bezos', 'niche', 'first', 'value', 'slido', 'pizza']
 
-// Tell Nosy Nellys that they have no business hacking
-// console.log("Hey! Inspect is illegal, ya Nosy Nelly")
 
 // Initalize the variables
 let guess = [];
@@ -90,6 +88,7 @@ guess.forEach((letter, index) => {
       document.getElementById(idSelector).style.background = 'rgb(121, 177, 90)';
     }
    else {
+     document.getElementById(idSelector).classList.add('wrongLetter'); 
      wrongGuesses.push(letter);
      //console.log('bad letters');
    } 
