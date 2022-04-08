@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Play some 100Devs Wordle</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      100devs Wordle!
+    </h1>
+    <form>
+      <label for="guess">Enter your guess: </label>
+      <input type="text" placeholder="GUESS (5 letters)" id="guess">
+      <button id="checkButton" type="button">Submit</button>
+      <button id="resetButton" type="button">Reset</button>
+    </form>
+    
+    <div class="tile-container">
+      <div class="guessRow" id="guessRow-0">
+        <div class="guessBox" id="Row0-Col0">  </div>
+        <div class="guessBox" id="Row0-Col1">  </div>
+        <div class="guessBox" id="Row0-Col2">  </div>
+        <div class="guessBox" id="Row0-Col3">  </div>
+        <div class="guessBox" id="Row0-Col4">  </div>
+      </div>
+      
+      <div class="guessRow" id="guessRow-1"> 
+        <div class="guessBox" id="Row1-Col0">  </div>
+        <div class="guessBox" id="Row1-Col1">  </div>
+        <div class="guessBox" id="Row1-Col2">  </div>
+        <div class="guessBox" id="Row1-Col3">  </div>
+        <div class="guessBox" id="Row1-Col4">  </div>
+      </div>
+      
+      <div class="guessRow" id="guessRow-2">
+        <div class="guessBox" id="Row2-Col0">  </div>
+        <div class="guessBox" id="Row2-Col1">  </div>
+        <div class="guessBox" id="Row2-Col2">  </div>
+        <div class="guessBox" id="Row2-Col3">  </div>
+        <div class="guessBox" id="Row2-Col4">  </div>
+      </div>
+      
+      <div class="guessRow" id="guessRow-3"> 
+        <div class="guessBox" id="Row3-Col0">  </div>
+        <div class="guessBox" id="Row3-Col1">  </div>
+        <div class="guessBox" id="Row3-Col2">  </div>
+        <div class="guessBox" id="Row3-Col3">  </div>
+        <div class="guessBox" id="Row3-Col4">  </div>
+      </div>
+      <div class="guessRow" id="guessRow-4">
+        <div class="guessBox" id="Row4-Col0">  </div>
+        <div class="guessBox" id="Row4-Col1">  </div>
+        <div class="guessBox" id="Row4-Col2">  </div>
+        <div class="guessBox" id="Row4-Col3">  </div>
+        <div class="guessBox" id="Row4-Col4">  </div>
+      </div>
+      <div class="guessRow" id="guessRow-5">
+        <div class="guessBox" id="Row5-Col0">  </div>
+        <div class="guessBox" id="Row5-Col1">  </div>
+        <div class="guessBox" id="Row5-Col2">  </div>
+        <div class="guessBox" id="Row5-Col3">  </div>
+        <div class="guessBox" id="Row5-Col4">  </div>
+      </div>
+    </div>
+    
+    
+    
+  </body>
+</html>

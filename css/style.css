@@ -1,0 +1,80 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, .75), url("https://leonnoel.com/photo2.png");
+  background-repeat: no-repeat;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+body form {
+  display: flex;
+  justify-content: center;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.guessRow {
+  display: flex;
+  justify-content: center;
+}
+
+.guessRow div {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  
+  margin: 5px;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.guessBox {
+  background: rgba(240, 240, 240, 1);
+}
+
+/* change color css */
+
+.wrongLetter {
+  background-color: #3a3a3c;
+  border: none;
+}
+
+.yellowOverlay {
+  background-color: #b59f3a;
+  border: none;
+}
+
+.greenOverlay {
+  background-color: #538d4e;
+  border: none;
+}
