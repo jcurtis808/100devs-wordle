@@ -73,16 +73,16 @@ form * {
 /* change color css */
 
 .wrongLetter {
-  background-color: rgba(69, 76, 90, .75);
+  background: rgba(69, 76, 90, .75);
   border: none;
 }
 
 .yellowOverlay {
-  background-color: #b59f3a;
+  background: #b59f3a;
   border: none;
 }
 
 .greenOverlay {
-  background-color: #538d4e;
+  background: #538d4e;
   border: none;
 }
