@@ -43,17 +43,14 @@ function makeLetterArray (){
 // need to improve functionality for duplicate letters in guess but not in answer
 
 function checkGuess(){
-  working = []
   if (guessRow < 6) {
     guess.forEach((letter, index) => {
       let idSelector = `Row${guessRow}-Col${index}`;
       document.getElementById(idSelector).innerText = letter;            
       if (guess[index] == correctWord[index]) {
         document.getElementById(idSelector).style.background = 'rgb(121, 177, 90)';
-        working.push(letter)
       } else if (correctWord.includes(letter)){
         document.getElementById(idSelector).style.background = 'rgb(253, 203, 88)';
-        working.push(letter)
       } else {
         document.getElementById(idSelector).style.background = 'rgba(69, 76, 90, .75)'; 
         wrongGuesses.push(letter);
@@ -64,8 +61,8 @@ function checkGuess(){
     alert(`The correct word was ${correctWord.join('')}, you lose.`)
     resetScreen()
   }
-  if (working.join('') === correctWord.join('')) {
-    alert(`${working.join('')} is correct, you win!`)
+  if (guess.join('') === correctWord.join('')) {
+    alert(`${guess.join('')} is correct, you win!`)
     resetScreen()
   }
 }
