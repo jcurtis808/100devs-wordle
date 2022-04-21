@@ -90,9 +90,3 @@ function resetScreen() {
   //Reset input value 
 document.querySelector('#guess').value = '';
 }
-
-
-
-// Function to pluck the word that the user inputs and split that word into an array (hydra will = ['h','y','d','r','a'])
-
-// This function will check if your guess is correct
